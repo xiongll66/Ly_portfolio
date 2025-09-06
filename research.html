@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+  research.html    
+  Ly Xiong 
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Resume_portfolio.pdf" target="_blank">Resume</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="header">
+      <h1>Research Project</h1>
+      <p><em>Summer 2022</em></p>
+    </section>
+
+    <section class="card">
+      <h2>Modeling Soil Carbon Rates of Change With Nearly-Continuous Data From Selected NEON Sites</h2>
+      <p>
+        The goal of this research project was to acquire and analyze environmental measurements from different ecosystems across the United States to model rates of change of soil carbon dioxide.
+        Understanding soil carbon fluxes provides baseline metrics for monitoring changes in soil carbon under future climate scenarios.
+      </p>
+      <p>
+        This project applied data from the
+        <a href="https://neonscience.org" target="_blank">National Ecological Observatory Network (NEON)</a> 
+        across a multi-year period using mathematical modeling, data science, and environmental science. After acquiring half-hourly data of temperature, soil moisture, and soil CO<sub>2</sub> concentrations, we applied a numerical model to calculate the rate of change of CO<sub>2</sub> from the soil (the soil carbon flux) at different sites.
+      </p>
+      <p>
+        We studied and optimized code using R and its associated packages to make the workflow more efficient. A key challenge we addressed was filling in measurement gaps across variables used in the modeling process. To support interactive exploration, we developed a web app using Shiny:
+        <a href="https://jmzobitz.shinyapps.io/NEON-soil-fluxes/" target="_blank">NEON Soil Flux Viewer</a>.
+        While further model validation is ongoing, we observed good agreement across flux outputs from various sites, highlighting the potential of this approach for ecological data analysis.
+      </p>
+    </section>
+
+    <section class="conference">
+      <div>
+        <img src="image/poster.png" alt="Research Poster" />
+      </div>
+      <div>
+        <img src="image/presenting.jpg" alt="Presenting Research" />
+      </div>
+      <div>
+        <img src="image/NCUWM.jpg" alt="NCUWM Conference" />
+      </div>
+      <div class="info">
+        <p>Presented research at The Nebraska Conference for Undergraduate Women in Mathematics</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
